@@ -1,0 +1,36 @@
+1. Identify the top 10 customers and their email so we can reward them
+2. What are the most profitable movie genres? 
+3. How many rented movies were returned late, early, and on time?
+4. Which country is the most profitable for the business?
+5. What is the average rental rate per movie genre?
+6. Create a query that lists each movie, the film category it is classified in, and the number of times it has been rented out.
+7. How many distinct users have rented each genre?
+8. What is the average rental rate for each genre? (from the highest to the lowest)
+9. What are the total sales in each country? 
+10. Do we have actors in the actor table that share the full name and if yes display those shared names
+11. Display the customer names that share the same address (e.g. families).
+12. Display the total amount payed by all customers combined in the payment table.
+13. Display the total amount payed by each customer in the payment table.
+14. What's the highest amount paid by a customer?
+15. What is the name of the customer who made the highest total payments?
+16. What is the movie(s) that was rented the most?
+17. Which movies have been rented so far?
+18. Which movies have not been rented so far?
+19. Which customers have not rented any movies so far?
+20. Display each movie and the number of times it got rented
+21. Show the number of movies each actor acted in
+22. Display the names of the actors that acted in more than 20 movies
+23. How many actors have 8 letters only in their first_names?
+24. For all the movies rated “PG” show the movie and the number of times it got rented
+25. Display the movies offered for rent in store_id 1 and not offered in store_id 2
+26. Display the movies offered for rent in any of the two stores 1 and 2
+27. Display the movie titles of those movies offered in both stores at the same time
+28. For each store, display the number of customers that are members of that store
+29. Display the movie title for the most rented movie in the store with store_id 1
+30. How many movies are not offered for rent in the stores yet?
+31. Display the customer_id’s for those customers that rented a movie DVD more than once.
+32. Show the number of rented movies under each rating
+33. Show the earnings of each of the stores 1 and 2
+34. Count the number of actors who’s first_names don’t start with an ‘A’.
+35. Find actor’s first_name that starts with ‘P’ followed by (an e or an a) then any other letter.
+36. Find customer first_names that starts with ‘P’ followed by any 5 letters.
