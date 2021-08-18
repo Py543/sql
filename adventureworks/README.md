@@ -14,7 +14,7 @@ Coming off a successful fiscal year, Adventure Works Cycles is looking to broade
 2.  Write a SELECT statement that lists the name, product number, and color of each product. 
 3.  Write a SELECT statement that lists the customer ID numbers and sales order ID numbers from the Sales.SalesOrderHeader table.
 
-# Filtering Data 
+# Filtering Data
 1. Write a query using a WHERE clause that displays all the employees listed in the
 HumanResources.Employee table who have the job title Research and Development Engineer.
 Display the business entity ID number, the login ID, and the title for each one. 
@@ -29,10 +29,6 @@ table. Sort the results by LastName, FirstName, and MiddleName.
 2. Write a query that displays all the rows from the Person.Person table where the rows were
 modified after December 29, 2000. Display the business entity ID number, the name columns,
 and the modified date. 
-
-3. Write a query displaying the order ID, order date, and total due from the Sales.SalesOrderHeader
-table. Retrieve only those rows where the order was placed during the month of September 2001
-and the total due exceeded $1,000.
 
 # Working With NULLs
 1.  Write a query displaying the ProductID, Name, and Color columns from rows in the
@@ -71,9 +67,6 @@ OrderDate, and ShipDate columns.
 4. Write a query that displays only the date, not the time, for the order date and ship date in the
 Sales.SalesOrderHeader table. 
 
-5.  Write a query that adds six months to each order date in the Sales.SalesOrderHeader table.
-Include the SalesOrderID and OrderDate columns. 
-
 
 # Joins
 ## Inner Joins
@@ -86,16 +79,11 @@ Person.Person table. The BusinessEntityID column in the Person.Person table matc
 PersonID column in the Sales.Customer table. Display the CustomerID, StoreID, and TerritoryID
 columns along with the name columns. 
 
-4. Write a query that joins the Sales.SalesOrderHeader table to the Sales.
-SalesPerson table. Join the BusinessEntityID column from the Sales.SalesPerson table to the
-SalesPersonID column in the Sales.SalesOrderHeader table. Display the SalesOrderID along with
-the SalesQuota and Bonus. 
-
-5. The catalog description for each product is stored in the Production.ProductModel table. Display
+3. The catalog description for each product is stored in the Production.ProductModel table. Display
 the columns that describe the product from the Production.Product table, such as the color and
 size along with the catalog description for each product. 
 
-6. Write a query that displays the names of the customers along with the product names that they
+4. Write a query that displays the names of the customers along with the product names that they
 have purchased. Hint - Five tables will be required to write this query! 
 
 
@@ -114,15 +102,9 @@ Include the SalesPersonID and SalesYTD columns in the results.
 4. Change the query written in question 3 so that the salesperson’s name also displays from the
 Person.Person table.
 
-5.  The Sales.SalesOrderHeader table contains foreign keys to the Sales.CurrencyRate and
-Purchasing.ShipMethod tables. Write a query joining all three tables, making sure it contains all
-rows from Sales.SalesOrderHeader. Include the CurrencyRateID, AverageRate, SalesOrderID, and
-ShipBase columns. 
-
 # Summarizing Data 
-Aggregating Data:
-1.  Write a query to determine the price of the most expensive product ordered. Use the UnitPrice
-column of the Sales.SalesOrderDetail table. 
+1.  Write a query joining the Person.Person, Sales.Customer, and Sales.SalesOrderHeader tables to
+return a list of the customer names along with a count of the orders placed
 
 2.  Write a query to determine the average freight amount in the Sales.SalesOrderHeader table. 
 
@@ -132,20 +114,10 @@ product line.
 4. Write a query that displays the count of orders placed by year for each customer using the
 Sales.SalesOrderHeader table.
 
-5.  Write a query joining the Person.Person, Sales.Customer, and Sales.SalesOrderHeader tables to
-return a list of the customer names along with a count of the orders placed
-
-6. Write a query using the Sales.SalesOrderHeader, Sales.SalesOrderDetail, and
-Production.Product tables to display the total sum of products by ProductID and OrderDate. 
-
 
 # Having Clause
 1.   Write a query that creates a sum of the LineTotal in the Sales.SalesOrderDetail table grouped by
 the SalesOrderID. Include only those rows where the sum exceeds 1,000. 
-
-2. Write a query that groups the products by ProductModelID along with a count. Display the rows
-that have a count that equals 1. 
-
 
 # Subqueries
 1.  Using a subquery, display the product names and product ID numbers from the
@@ -163,10 +135,37 @@ Sales.SalesOrderDetail table should be inside the derived table query.
 
 2. Rewrite the query in question 1 with a common table expression. 
 
-3. Write a query that displays all customers along with the orders placed in 2001. Use a common
+
+# Mixed Questions
+1.  Write a query to determine the price of the most expensive product ordered. Use the UnitPrice
+column of the Sales.SalesOrderDetail table. 
+
+2. Write a query that groups the products by ProductModelID along with a count. Display the rows
+that have a count that equals 1. 
+
+3. Write a query displaying the order ID, order date, and total due from the Sales.SalesOrderHeader
+table. Retrieve only those rows where the order was placed during the month of September 2001
+and the total due exceeded $1,000.
+
+4. Write a query that displays all customers along with the orders placed in 2001. Use a common
 table expression to write the query and include the CustomerID, SalesOrderID, and OrderDate
 columns in the results. 
 
+5.  The Sales.SalesOrderHeader table contains foreign keys to the Sales.CurrencyRate and
+Purchasing.ShipMethod tables. Write a query joining all three tables, making sure it contains all
+rows from Sales.SalesOrderHeader. Include the CurrencyRateID, AverageRate, SalesOrderID, and
+ShipBase columns. 
+
+6. Write a query that joins the Sales.SalesOrderHeader table to the Sales.
+SalesPerson table. Join the BusinessEntityID column from the Sales.SalesPerson table to the
+SalesPersonID column in the Sales.SalesOrderHeader table. Display the SalesOrderID along with
+the SalesQuota and Bonus. 
+
+6.  Write a query that adds six months to each order date in the Sales.SalesOrderHeader table.
+Include the SalesOrderID and OrderDate columns. 
+
+7. Write a query using the Sales.SalesOrderHeader, Sales.SalesOrderDetail, and
+Production.Product tables to display the total sum of products by ProductID and OrderDate. 
 
 ### Question Bank: 
 - [pdf solutions](https://link.springer.com/content/pdf/bbm%3A978-1-4302-2462-4%2F1.pdf)
